@@ -13,7 +13,7 @@ is taken from the [Docker registry](https://registry.hub.docker.com/).
 
 ## Install on Mac OS X
 
-### Prerequisites
+### Requirements
 
 * Fig >= 1.0
 * PHP >= 5.4
