@@ -1,0 +1,6 @@
+{
+    "require": {
+        "silex/silex": "~1.2",
+        "predis/predis": "1.0.0"
+    }
+}

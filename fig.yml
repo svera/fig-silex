@@ -1,0 +1,11 @@
+app:
+  build: .
+  ports:
+   - "8000:8000"
+  volumes:
+   - .:/code
+  command: php -S 0.0.0.0:8000 -t /code/app
+  links:
+   - redis
+redis:
+  image: redis
