@@ -20,6 +20,7 @@ is taken from the [Docker registry](https://registry.hub.docker.com/).
 * [Composer](https://getcomposer.org/)
 * [Boot2Docker](https://github.com/boot2docker/boot2docker) >= 1.3
 (**OR** [Boot2Docker-cli](https://github.com/boot2docker/boot2docker-cli/releases) >= 1.3
+and use it to download *boot2docker.iso* with `boot2docker download`
 if you have [VirtualBox](https://www.virtualbox.org/) already installed)
 
 ### Steps
