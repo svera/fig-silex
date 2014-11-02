@@ -24,7 +24,7 @@ is taken from the [Docker registry](https://registry.hub.docker.com/).
 anywhere else due to a current Boot2docker limitation)  
     ```
     git clone https://github.com/svera/fig-silex
-    
+
     cd fig-silex
     ```
 2. Install project PHP dependencies  
@@ -45,13 +45,13 @@ anywhere else due to a current Boot2docker limitation)
 * If you already have VirtualBox installed, it is better to install [Boot2Docker-cli](https://github.com/boot2docker/boot2docker-cli/releases) >= 1.3 and use it to download *boot2docker.iso* with `boot2docker download`
 * If the `fig up` step fails with a `Couldn't connect to Docker daemon at http+unix://var/run/docker.sock - is it running?` message,
 do the following (Linux only) 
-    * Change the DOCKER_OPTS in /etc/default/docker to:  
+    * Change the DOCKER_OPTS in `/etc/default/docker` to:  
 `DOCKER_OPTS="-H tcp://127.0.0.1:4243 -H unix:///var/run/docker.sock"`  
 
     * Restart docker  
     `sudo restart docker`
 
-    * Make sure that docker is running on localhost:4243  
+    * Make sure that docker is running on `localhost:4243`  
         ```
         $ netstat -ant  |grep 4243
         tcp        0      0 127.0.0.1:4243          0.0.0.0:*               LISTEN
