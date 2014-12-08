@@ -18,7 +18,7 @@ is taken from the [Docker registry](https://registry.hub.docker.com/).
 
 ## Install
 
-1. Clone sample project into your `Users` (Mac OS X) or `home` (Linux) folder (note that, in Mac OS X,  it won't work
+1. Clone sample project (note that, in Mac OS X, it *must* be cloned inside `Users` as it won't work
 anywhere else due to a current Boot2docker limitation)  
     ```
     git clone https://github.com/svera/fig-silex
