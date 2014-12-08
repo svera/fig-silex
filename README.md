@@ -12,31 +12,27 @@ is taken from the [Docker registry](https://registry.hub.docker.com/).
 
 ## Requirements
 
-* Fig >= 1.0
-* PHP >= 5.4
-* [Composer](https://getcomposer.org/)
 * Docker (Linux) or 
 [Boot2Docker](https://github.com/boot2docker/boot2docker) (Mac OS) >= 1.3
+* Fig >= 1.0
 
 ## Install
 
-1. Clone sample project into your `Users` folder (note that it won't work
+1. Clone sample project into your `Users` (Mac OS X) or `home` (Linux) folder (note that, in Mac OS X,  it won't work
 anywhere else due to a current Boot2docker limitation)  
     ```
     git clone https://github.com/svera/fig-silex
 
     cd fig-silex
     ```
-2. Install project PHP dependencies  
-`composer install`
 
-3. Build app infrastructure  
+2. Build app infrastructure  
 `fig up` (or `fig up -d` to run in background)  
 
-4. Check out VM exposed IP (Boot2docker only)
+3. Check out VM exposed IP (Boot2docker only)
 `boot2docker ip` 
 
-5. Go to your web browser and type  
+4. Go to your web browser and type  
 `http://<VM exposed IP>:8000` (Mac OS) or  
 `http://localhost:8000` (Linux)
 

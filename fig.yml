@@ -3,7 +3,7 @@ app:
   ports:
    - "8000:8000"
   volumes:
-   - .:/code
+   - ./app:/code/app
   command: php -S 0.0.0.0:8000 -t /code/app
   links:
    - redis
